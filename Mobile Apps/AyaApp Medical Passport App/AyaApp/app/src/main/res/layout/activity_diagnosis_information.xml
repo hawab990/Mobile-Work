@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_diagnosis_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    tools:context="op_bit.ayaapp.ViewDiagnosisInformation">
+<include layout="@layout/layout_with_arrow_and_edit"/>
+    <!--<View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"/>
+
+    <Button
+        android:text="Edit"
+
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_diEdit"
+
+        android:background="#4949FC"
+        android:textColor="#ffffff"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/myRectangleView"
+        style="?android:attr/borderlessButtonStyle"/>-->
+
+    <TextView
+        android:text="Diagnosis:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_diagnosis"
+        android:layout_alignBaseline="@+id/tv_diDiagnosis"
+        android:layout_alignBottom="@+id/tv_diDiagnosis"
+        android:layout_toStartOf="@+id/tv_Title" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diDiagnosis"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/myRectangleView"
+        android:layout_toEndOf="@+id/lbl_diagnosis"
+        android:layout_marginStart="47dp" />
+
+    <TextView
+        android:text="Date Diagnosed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbl_date"
+        android:layout_below="@+id/tv_diDiagnosis"
+        android:layout_alignStart="@+id/lbl_diagnosis"
+        android:layout_marginTop="82dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diDiagnosisDate"
+        android:layout_alignBaseline="@+id/lbl_date"
+        android:layout_alignBottom="@+id/lbl_date"
+        android:layout_alignStart="@+id/tv_diDiagnosis" />
+
+    <TextView
+        android:text="Treatment:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/lbl_date"
+        android:id="@+id/lbl_treatment" />
+
+    <TextView
+        android:text="Remmision:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/lbl_remision"
+        android:layout_below="@+id/lbl_treatment"
+        android:layout_alignStart="@+id/lbl_treatment" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diRemision"
+        android:layout_alignBaseline="@+id/lbl_remision"
+        android:layout_alignBottom="@+id/lbl_remision"
+        android:layout_alignStart="@+id/tv_diTreatment" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_diTreatment"
+        android:layout_above="@+id/lbl_remision"
+        android:layout_alignStart="@+id/tv_diDiagnosisDate" />
+
+    <!--<ImageButton
+        android:id="@+id/btn_back"
+        android:src="@drawable/whitearrowleft"
+        android:scaleType="fitCenter"
+        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:background="#4949FC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />-->
+
+    <TextView
+        android:text="Diagnosis Information"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_Title"
+        android:gravity="center_vertical"
+        android:layout_alignBaseline="@+id/btn_diEdit"
+        android:layout_alignBottom="@+id/btn_diEdit"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

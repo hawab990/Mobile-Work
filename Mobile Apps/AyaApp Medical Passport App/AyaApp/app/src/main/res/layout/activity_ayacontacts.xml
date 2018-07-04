@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ayacontacts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="op_bit.ayaapp.AYAContacts">
+
+    <include layout="@layout/generic_with_back_button"/>
+
+    <TextView
+        android:text="AYA Contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView50"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="Citizen’s Advice Bureau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:id="@+id/tv_cab"
+                android:layout_below="@+id/tv_lbcNZ"
+                android:layout_alignEnd="@+id/tv_lbcNZ" />
+
+            <TextView
+                android:text="www.canteen.org.nz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:text="0800 226 8336"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView19"
+                android:layout_below="@+id/tv_contactCanteenNumber"
+                android:layout_alignStart="@+id/tv_contactCanteenNumber" />
+
+            <TextView
+                android:text="0800 222 158"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView20"
+                android:id="@+id/textView23"
+                android:layout_alignTop="@+id/tv_doc" />
+
+            <TextView
+                android:text="Dunedin Onocology Counselling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:id="@+id/tv_doc"
+                android:layout_below="@+id/tv_ofs"
+                android:layout_alignEnd="@+id/tv_ofs" />
+
+            <TextView
+                android:text="Cancer Society"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_cancer"
+                android:layout_below="@+id/textView25"
+                android:layout_alignEnd="@+id/tv_doc" />
+
+            <TextView
+                android:text="03 477 7447"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_youthLine"
+                android:layout_alignStart="@+id/textView23"
+                android:id="@+id/textView26" />
+
+            <TextView
+                android:text="0800 226 237"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView26"
+                android:layout_alignStart="@+id/textView26"
+                android:id="@+id/textView27" />
+
+            <TextView
+                android:text="www.cancernz.org.nz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView27"
+                android:layout_alignStart="@+id/textView27"
+                android:id="@+id/textView28" />
+
+            <TextView
+                android:text="Youthline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:id="@+id/tv_youthLine"
+                android:layout_below="@+id/tv_cancer"
+                android:layout_alignEnd="@+id/tv_cancer" />
+
+            <TextView
+                android:text="0800 37 66 33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView29"
+                android:layout_alignBaseline="@+id/tv_youthLine"
+                android:layout_alignBottom="@+id/tv_youthLine"
+                android:layout_alignStart="@+id/textView28" />
+
+            <TextView
+                android:text="Text free: 234"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView29"
+                android:layout_alignStart="@+id/textView29"
+                android:id="@+id/textView30" />
+
+            <TextView
+                android:text="www.youthline.co.nz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView30"
+                android:layout_alignStart="@+id/textView30"
+                android:id="@+id/textView31" />
+
+            <TextView
+                android:text="Relationships Aotearoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_relationShips"
+                android:layout_below="@+id/textView31"
+                android:layout_alignEnd="@+id/tv_youthLine" />
+
+            <TextView
+                android:text="03 477 6766"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_lbcNZ"
+                android:layout_alignStart="@+id/textView25"
+                android:id="@+id/tv_numberRealtionShips" />
+
+            <TextView
+                android:text="0800 735 283"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_numberRealtionShips"
+                android:layout_alignStart="@+id/tv_numberRealtionShips"
+                android:id="@+id/textView33" />
+
+            <TextView
+                android:text="03 474 0999 (extn 8180)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView25"
+                android:layout_below="@+id/textView23"
+                android:layout_alignStart="@+id/textView23" />
+
+            <TextView
+                android:text="www.relationships.org.nz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView34"
+                android:layout_below="@+id/textView33"
+                android:layout_alignEnd="@+id/textView25" />
+
+            <TextView
+                android:text="Leukaemia and Blood Cancer NZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/tv_lbcNZ"
+                android:layout_below="@+id/tv_relationShips"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="0800 15 10 15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView43"
+                android:layout_alignBaseline="@+id/tv_lbcNZ"
+                android:layout_alignBottom="@+id/tv_lbcNZ"
+                android:layout_alignStart="@+id/textView33" />
+
+            <TextView
+                android:text="www.leukaemia.org.nz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView44"
+                android:layout_below="@+id/textView43"
+                android:layout_alignStart="@+id/textView43" />
+
+            <TextView
+                android:text="0800 367 222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView45"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/textView34" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView19"
+                android:layout_marginTop="6dp"
+                android:layout_alignStart="@+id/tv_relationShips" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/tv_ofs"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="14dp"
+                android:id="@+id/view3" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textView28"
+                android:id="@+id/view5"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView31"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/view6" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView34"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/textView34"
+                android:layout_marginTop="8dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/view7" />
+
+            <TextView
+                android:text="03 477 4933"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_contactCanteenNumber"
+                android:layout_marginStart="25dp"
+                android:layout_alignBaseline="@+id/tv_canteenOtago"
+                android:layout_alignBottom="@+id/tv_canteenOtago"
+                android:layout_toEndOf="@+id/tv_canteenOtago" />
+
+            <TextView
+                android:text="CanTeen Otago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:id="@+id/tv_canteenOtago"
+                android:layout_marginStart="104dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/view4"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/textView25"
+                android:layout_alignEnd="@+id/textView25" />
+
+            <TextView
+                android:text="03 474 7752 (extn 9264)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view3"
+                android:layout_alignStart="@+id/textView20" />
+
+            <TextView
+                android:text="Otago Fetility Services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_ofs"
+                android:layout_below="@+id/textView20"
+                android:layout_toStartOf="@+id/tv_contactCanteenNumber" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

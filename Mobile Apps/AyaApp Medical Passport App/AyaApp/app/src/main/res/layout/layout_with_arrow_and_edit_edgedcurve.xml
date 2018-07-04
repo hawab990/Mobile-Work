@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/iv_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@color/ayaBlue" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@color/ayaBlue"
+        android:layout_height="40dp"
+        android:id="@+id/iv_bottomBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/btn_home"
+        android:background="@color/ayaBlue"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:text="Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/btn_menu"
+        android:background="@color/ayaBlue"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <Button
+        android:layout_width="@dimen/title_bar"
+        android:layout_height="@dimen/title_bar"
+        android:id="@+id/btn_Back"
+        android:background="@drawable/arrow_aya"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/curve"
+        android:id="@+id/iv_curveSide"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textColorLink="@color/ayaBlue"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_teensLivingWithCancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_canteen"
+        android:layout_below="@+id/tv_canteen"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/teenslivingwithcancer"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_cancerNZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_southernPHO"
+        android:layout_below="@+id/tv_teensLivingWithCancer"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/cancernz"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_smokeFree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_afterCure"
+        android:layout_below="@+id/tv_afterCure"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/SmokeFree"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_cancerSurvivor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancersurvivor"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_seventyK"
+        android:layout_toEndOf="@+id/iv_curveSide" />
+
+    <TextView
+        android:id="@+id/tv_stupidCancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/stupidcancer"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels"
+        android:layout_below="@+id/tv_cancerSurvivor"
+        android:layout_alignStart="@+id/tv_health" />
+
+    <TextView
+        android:id="@+id/tv_southernDHB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_health"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/iv_curveSide"
+        android:text="@string/southerndhb"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_teensLivingWithCancer"
+        android:layout_below="@+id/tv_cancerNZ"
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/linktocanteen"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_seventyK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_smokeFree"
+        android:layout_below="@+id/tv_smokeFree"
+        android:layout_marginTop="16dp"
+        android:text="@string/seventyk"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_whatsNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/whatnext"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels"
+        android:layout_above="@+id/tv_southernPHO"
+        android:layout_alignStart="@+id/tv_helpfulWebsites" />
+
+    <TextView
+        android:id="@+id/tv_southernPHO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_curveSide"
+        android:layout_toEndOf="@+id/btn_Back"
+        android:text="@string/southernpho"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:text="Helpful Websites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_helpfulWebsites"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="20dp"
+        android:layout_above="@+id/iv_curveSide"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp" />
+
+    <TextView
+        android:text="Websites"
+        style="@style/headerText"
+        android:id="@+id/tv_healthInformation"
+        android:textColorLink="@color/ayaBlue"
+        android:layout_alignBaseline="@+id/btn_Back"
+        android:layout_alignBottom="@+id/btn_Back"
+        android:layout_alignEnd="@+id/tv_canteen" />
+
+    <TextView
+        android:id="@+id/tv_canteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_curveSide"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/btn_Back"
+        android:textColorLink="@color/ayaBlue"
+
+
+        android:text="@string/linktocanteen"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_fertileHope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_whatsNext"
+        android:layout_alignStart="@+id/tv_healthInformation"
+        android:layout_marginBottom="15dp"
+        android:text="@string/fertileHope"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+    <TextView
+        android:id="@+id/tv_afterCure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_health"
+        android:layout_below="@+id/tv_southernDHB"
+        android:layout_marginTop="17dp"
+        android:text="@string/aftercure"
+        android:textColorLink="@color/ayaBlue"
+        android:textSize="@dimen/labels" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+        table{
+            width:80%;
+        }
+        table, tr, td,th{
+            border:2px black solid;
+            padding:2%;
+        }
+        tr:nth-child(odd){
+            background-color:lightgrey;
+        }
+        tr:nth-child(even){
+            background-color:white;
+        }
+        th{
+            background-color:#595959;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+	<div>
+		<h2>Deployed</h2>
+		<h4>All the deployed items in the database</h4>
+		<br />
+		<br />
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Location</th>
+                <th>Date</th>
+                <th>Note</th>
+                <th>Item</th>
+                <th>Item note</th>
+				<th>Delete</th>
+            </tr>
+
+            @foreach (ItemDeployed thing in ViewBag.itemList)
+            {
+                <tr>
+                    <td>@thing.Project.projectName</td>
+                    <td>@thing.location</td>
+                    <td>@thing.date</td>
+                    <td>@thing.notes</td>
+
+                    <td>@thing.Item.SubType.subTypeName &nbsp;&nbsp; @thing.Item.SubType.Type.typeName</td>
+                    <td>@thing.Item.itemNote</td>
+                    <td><form method="post" action="/IoTDatabase/itemDeployed/delItem"><input type="hidden" value=@thing.deployedID name="itemID" /><input id="submit" type="submit" name="submit" value="delete"></form></td>
+                    
+                </tr>
+            }
+
+        </table>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/generic_layout"/>
+
+    <Button
+        android:layout_width="@dimen/title_bar"
+        android:layout_height="@dimen/title_bar"
+        android:id="@+id/btn_Back"
+        android:background="@drawable/arrow_aya"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar"
+        android:id="@+id/btn_Edit"
+        android:background="@color/ayaBlue"
+        android:text="Edit"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

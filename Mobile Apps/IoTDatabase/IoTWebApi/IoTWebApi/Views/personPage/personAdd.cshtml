@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type="text/css">
+            label{
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 120px;
+                text-align: right;
+            }
+
+            input[type=text] {
+              display: inline-block;
+              float: left;
+              margin-left:2%;
+              margin-bottom:1%;
+            }
+
+            input[type=submit]{
+                float:left;
+                clear:left;
+                margin-left:250px;
+                display: inline-block;
+
+            }
+
+        </style>
+    
+    </head>
+    <body>
+        <h2>People</h2>
+        <h4>Add a person</h4>
+        <br />
+        <form method="post" id="add-people-form" action="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Name" />
+
+            <br />
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" name="phone" placeholder="Phone Number" />
+
+            <br />
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Email" />
+
+            <br /><br /><br /><br />
+            <input type="submit" id="submit" name="Submit" />
+        </form>
+
+        <br />
+        <br />
+        <p style="color:@ViewBag.colour;">@ViewBag.result<p />
+
+    </body>
+</html>

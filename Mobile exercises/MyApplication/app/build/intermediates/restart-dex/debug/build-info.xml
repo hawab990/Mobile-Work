@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="25"
+    density="420dpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="4084939512302"
+    token="-5030186029319316749"
+    verifier="COMPATIBLE" >
+
+    <task
+        name="javac"
+        duration="80" />
+    <task
+        name="instant-run-dex"
+        duration="5" />
+    <task
+        name="instant-run-transform"
+        duration="8" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="C:\MyApplication\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build
+        timestamp="2623047857281"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\MyApplication\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="3553582791469"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="3617023078519"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3617023078519\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3644176873626"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3644176873626\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3657847756632"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3657847756632\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3676918069556"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3676918069556\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3685961663241"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3685961663241\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3786337456551"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3786337456551\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3800794587578"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3800794587578\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3817154868623"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3817154868623\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3829018521446"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3829018521446\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3849065893127"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3849065893127\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3991440675144"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\3991440675144\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="4015346389158"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\4015346389158\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="4033884876503"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\builds\debug\4033884876503\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="4084939512302"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\MyApplication\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+
+</instant-run>

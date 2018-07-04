@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ayakey_workers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="op_bit.ayaapp.AYAKeyWorkers">
+
+    <include layout="@layout/generic_with_back_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        style="@style/headerText"
+        android:text="AYA Key Workers"/>
+
+    <ImageView
+        android:id="@+id/iv_bottomBar"
+        android:adjustViewBounds="true"
+        android:layout_width="370dp"
+        android:layout_height="450dp"
+        app:srcCompat="@drawable/key_worker_map"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/workers_auckland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:id="@+id/tv_Auckland"
+        android:layout_marginStart="18dp"
+        android:layout_alignTop="@+id/iv_bottomBar"
+        android:layout_alignStart="@+id/iv_bottomBar"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:text="@string/workers_midland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Midland"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/tv_Auckland"
+        android:layout_centerHorizontal="true"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:text="@string/workers_midcentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_MidCentral"
+        android:layout_below="@+id/tv_Midland"
+        android:layout_alignEnd="@+id/tv_Auckland"
+        android:layout_marginTop="29dp"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:text="@string/workers_southern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Southern"
+        android:layout_marginBottom="28dp"
+        android:layout_alignBottom="@+id/iv_bottomBar"
+        android:layout_alignStart="@+id/tv_Midland"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:text="@string/workers_capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:id="@+id/tv_Capital"
+        android:layout_above="@+id/tv_Southern"
+        android:layout_toEndOf="@+id/tv_Southern"
+        android:layout_marginBottom="98dp"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:text="@string/workers_canterbury"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Canterbury"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/tv_Southern"
+        android:layout_toEndOf="@+id/tv_Midland"
+        android:linksClickable="false"
+        android:textColorLink="@color/ayaBlue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView21"
+        android:layout_above="@+id/iv_bottomBar"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="Tap on your region to contact the key workers" />
+
+</RelativeLayout>

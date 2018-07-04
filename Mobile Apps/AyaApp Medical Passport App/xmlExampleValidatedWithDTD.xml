@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE medical [
+<!ELEMENT medical (healthInfo,diagnosisInfo,medications,appointments)>
+<!ELEMENT healthInfo (firstName,lastName,gender,NHI,DOB,BSA,GPDetails,exestingAllergies,other,OnocologyTeam)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT NHI (#PCDATA)>
+<!ELEMENT DOB (#PCDATA)>
+<!ELEMENT BSA (#PCDATA)>
+<!ELEMENT GPDetails (Name,Address,Number)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Number (#PCDATA)>
+<!ELEMENT exestingAllergies (#PCDATA)>
+<!ELEMENT other (#PCDATA)>
+
+<!ELEMENT OnocologyTeam (phone,Oncologist,AYAKeyWorker,contactsName)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT Oncologist (#PCDATA)>
+<!ELEMENT AYAKeyWorker (#PCDATA)>
+<!ELEMENT contactsName (#PCDATA)>
+
+<!ELEMENT diagnosisInfo (diagnosis,dateDiagnosed,treatment,remision)>
+<!ELEMENT diagnosis (#PCDATA)>
+<!ELEMENT dateDiagnosed (#PCDATA)>
+<!ELEMENT treatment (#PCDATA)>
+<!ELEMENT remision (#PCDATA)>
+<!ELEMENT medications (medication)>
+<!ELEMENT medication (medicationName,cumulativeDosage,dosage)>
+<!ELEMENT medicationName (#PCDATA)>
+<!ELEMENT cumulativeDosage (#PCDATA)>
+<!ELEMENT dosage (#PCDATA)>
+<!ELEMENT appointments (appointment)>
+<!ELEMENT appointment (type,date)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT PotentialLongTermEffects (longTermEffect)>
+<!ELEMENT longTermEffect (#PCDATA)>
+]>
+<medical>
+	<healthInfo>
+		<firstName>Guy</firstName>
+		<lastName>Smiley</lastName>
+		<gender>Male</gender>
+		<NHI>ABC1234</NHI>
+		<DOB>11.11.91</DOB>
+		<BSA>1.03m2</BSA>
+		<GPDetails>
+			<Name>Dr phil</Name>
+			<Address>Mornington Health Centre, Dunedin</Address>
+			<Number>03 466 5011</Number>
+		</GPDetails>
+		<exestingAllergies>Nil known</exestingAllergies>
+		<other>STUFF STUFF STUFF</other>
+		<OnocologyTeam>
+			<phone>(03) 474 0999</phone>
+			<Oncologist>Dr David Parez</Oncologist>
+			<AYAKeyWorker>Val Waugh</AYAKeyWorker>
+			<contactsName>Dunedin Onocology</contactsName>
+		</OnocologyTeam>
+	</healthInfo>
+	
+	<diagnosisInfo> 
+		<diagnosis></diagnosis>
+		<dateDiagnosed></dateDiagnosed>
+		<treatment></treatment>
+		<remision></remision>
+	</diagnosisInfo>
+	
+	<medications>
+		<medication>
+			<medicationName></medicationName>
+			<cumulativeDosage></cumulativeDosage>
+			<dosage></dosage>
+		</medication>
+		<medication>
+			<medicationName></medicationName>
+			<cumulativeDosage></cumulativeDosage>
+			<dosage></dosage>
+		</medication>
+		<medication>
+			<medicationName></medicationName>
+			<cumulativeDosage></cumulativeDosage>
+			<dosage></dosage>
+		</medication>
+		
+	</medications>
+	<appointments>
+		<appointment>
+			<type></type>
+			<date></date>
+		</appointment>
+	</appointments>
+	
+	<PotentialLongTermEffects>
+	<longTermEffect></longTermEffect>
+	</PotentialLongTermEffects>
+	
+</medical>
+

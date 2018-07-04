@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 2px black solid;
+            padding: 2%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        th {
+            background-color: #595959;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>All the projects</h1>
+        <table>
+            @foreach (Project item in ViewBag.projects)
+            {
+                <tr>
+                    <td>@item.projectName</td>
+                    <td><form method="post" action="/IoTDatabase/project/delItem"><input type="hidden" value=@item.projectID name="itemID" /><input id="submit" type="submit" name="submit" value="delete"></form></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</body>
+</html>

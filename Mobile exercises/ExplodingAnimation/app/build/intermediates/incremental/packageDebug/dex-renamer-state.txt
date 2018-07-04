@@ -1,0 +1,7 @@
+#Wed May 17 16:55:25 NZST 2017
+base.0=C\:\\ExplodingAnimation\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_73cfbe5b4ffab8f47148a51ed7a5b178a4c22b4a
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\ExplodingAnimation\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_efceb56b542197d1e84eb35ca266f81b51510548\\classes.dex
+base.1=C\:\\ExplodingAnimation\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_efceb56b542197d1e84eb35ca266f81b51510548
+file.0=C\:\\ExplodingAnimation\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_73cfbe5b4ffab8f47148a51ed7a5b178a4c22b4a\\classes.dex

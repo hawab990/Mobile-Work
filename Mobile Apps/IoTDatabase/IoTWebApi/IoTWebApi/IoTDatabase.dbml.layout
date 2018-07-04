@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.75" name="IoTDatabase">
+  <DataContextMoniker Name="/IoTDatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="22fd43c6-94ae-4a10-8d40-72739b596c8d" absoluteBounds="6.25, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/Item" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b85ab84f-55b0-45af-af4e-9ac2321ec76f" absoluteBounds="6.265, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4cf0dcaf-820f-4290-90e7-213835d4c35b" absoluteBounds="0.75, 4.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3d494e7-6487-4751-9507-3c825fc46259" absoluteBounds="0.765, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03e848d0-d2e4-47af-85ed-e7e38a7b7b1e" absoluteBounds="9, 3.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/ItemDeployed" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b82d5968-9303-4ae4-8b05-57b794dccb05" absoluteBounds="9.015, 4.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="477abc35-524e-4dab-a25f-e55035ede786" absoluteBounds="9, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/ItemIssue" />
+      <nestedChildShapes>
+        <elementListCompartment Id="504a61f2-360e-43cc-9525-db78b41db830" absoluteBounds="9.015, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c95dfcab-e41f-4cfe-ba32-14883ebfdc82" absoluteBounds="6.25, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/Person" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f62e8648-cee4-4a6f-8b3e-dc02b262db19" absoluteBounds="6.265, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c463f963-9474-4d59-953e-03f29c4c464a" absoluteBounds="6.25, 7.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e305abc-c695-4499-bd66-f09db8e9299b" absoluteBounds="6.265, 7.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20fbb674-f0ad-4cc4-bf99-97f6a2013332" absoluteBounds="3.5, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/IoTDatabaseDataContext/SubType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfca86a2-5131-4908-9e98-89e6c126bdce" absoluteBounds="3.515, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 4.78929768880208); (9 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/Item/Item_ItemDeployed" />
+      <nodes>
+        <classShapeMoniker Id="22fd43c6-94ae-4a10-8d40-72739b596c8d" />
+        <classShapeMoniker Id="03e848d0-d2e4-47af-85ed-e7e38a7b7b1e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4); (8.625 : 3.625); (8.625 : 1.82774983723958); (9 : 1.82774983723958)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/Item/Item_ItemIssue" />
+      <nodes>
+        <classShapeMoniker Id="22fd43c6-94ae-4a10-8d40-72739b596c8d" />
+        <classShapeMoniker Id="477abc35-524e-4dab-a25f-e55035ede786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.32817260742187); (8.54166666666667 : 2.32817260742187 : JumpStart); (8.70833333333333 : 2.32817260742187 : JumpEnd); (9 : 2.32817260742187)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/Person/Person_ItemIssue" />
+      <nodes>
+        <classShapeMoniker Id="c95dfcab-e41f-4cfe-ba32-14883ebfdc82" />
+        <classShapeMoniker Id="477abc35-524e-4dab-a25f-e55035ede786" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.84699625651042); (10 : 7.84699625651042); (10 : 5.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/Project/Project_ItemDeployed" />
+      <nodes>
+        <classShapeMoniker Id="c463f963-9474-4d59-953e-03f29c4c464a" />
+        <classShapeMoniker Id="03e848d0-d2e4-47af-85ed-e7e38a7b7b1e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.78929768880208); (6.25 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/SubType/SubType_Item" />
+      <nodes>
+        <classShapeMoniker Id="20fbb674-f0ad-4cc4-bf99-97f6a2013332" />
+        <classShapeMoniker Id="22fd43c6-94ae-4a10-8d40-72739b596c8d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.84699625651042); (3.5 : 4.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/IoTDatabaseDataContext/Type/Type_SubType" />
+      <nodes>
+        <classShapeMoniker Id="4cf0dcaf-820f-4290-90e7-213835d4c35b" />
+        <classShapeMoniker Id="20fbb674-f0ad-4cc4-bf99-97f6a2013332" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

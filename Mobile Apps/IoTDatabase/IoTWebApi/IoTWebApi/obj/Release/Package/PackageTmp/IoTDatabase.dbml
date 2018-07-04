@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Comsoft1" Class="IoTDatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=bitdev.ict.op.ac.nz;Initial Catalog=Comsoft1;Persist Security Info=True;User ID=comsoft1" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="Comsoft1ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Item" Member="Items">
+    <Type Name="Item">
+      <Column Name="itemID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="subTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="itemNote" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="imageUrl" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Item_ItemDeployed" Member="ItemDeployeds" ThisKey="itemID" OtherKey="itemID" Type="ItemDeployed" />
+      <Association Name="Item_ItemIssue" Member="ItemIssues" ThisKey="itemID" OtherKey="itemID" Type="ItemIssue" />
+      <Association Name="SubType_Item" Member="SubType" ThisKey="subTypeID" OtherKey="subTypeID" Type="SubType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Type" Member="Types">
+    <Type Name="Type">
+      <Column Name="typeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="typeName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Type_SubType" Member="SubTypes" ThisKey="typeID" OtherKey="typeID" Type="SubType" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemDeployed" Member="ItemDeployeds">
+    <Type Name="ItemDeployed">
+      <Column Name="deployedID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="itemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="projectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="location" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="notes" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="Item_ItemDeployed" Member="Item" ThisKey="itemID" OtherKey="itemID" Type="Item" IsForeignKey="true" />
+      <Association Name="Project_ItemDeployed" Member="Project" ThisKey="projectID" OtherKey="projectID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemIssue" Member="ItemIssues">
+    <Type Name="ItemIssue">
+      <Column Name="issueID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="personID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="itemID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="dateTaken" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dateReturned" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="itemIssueNote" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="itemReturned" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Item_ItemIssue" Member="Item" ThisKey="itemID" OtherKey="itemID" Type="Item" IsForeignKey="true" />
+      <Association Name="Person_ItemIssue" Member="Person" ThisKey="personID" OtherKey="personID" Type="Person" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Person" Member="Persons">
+    <Type Name="Person">
+      <Column Name="personID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="phoneNumber" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Person_ItemIssue" Member="ItemIssues" ThisKey="personID" OtherKey="personID" Type="ItemIssue" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project" Member="Projects">
+    <Type Name="Project">
+      <Column Name="projectID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="projectName" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Project_ItemDeployed" Member="ItemDeployeds" ThisKey="projectID" OtherKey="projectID" Type="ItemDeployed" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubType" Member="SubTypes">
+    <Type Name="SubType">
+      <Column Name="subTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="typeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="subTypeName" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SubType_Item" Member="Items" ThisKey="subTypeID" OtherKey="subTypeID" Type="Item" />
+      <Association Name="Type_SubType" Member="Type" ThisKey="typeID" OtherKey="typeID" Type="Type" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

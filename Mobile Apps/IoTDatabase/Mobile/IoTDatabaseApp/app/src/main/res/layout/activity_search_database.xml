@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9D24"
+    tools:context="com.bit.iotdatabaseapp.SearchDatabase">
+
+    <include layout="@layout/toolbarsearchdatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/include" />
+
+
+    <LinearLayout
+        android:id="@+id/searchListFragholder"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        android:elevation="11dp"
+        android:orientation="vertical"
+        android:spinnerMode="dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_below="@+id/tv_PhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Spinner
+        android:id="@+id/spner_searchTyp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:elevation="11dp"
+        android:popupBackground="#A5D6A7"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/iv_buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/et_search"
+        android:layout_gravity="right|center_vertical"
+        android:elevation="21dp"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edi_text"
+        android:elevation="11dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Search database for owner or item"
+        android:layout_below="@+id/spner_searchTyp"
+        android:layout_toStartOf="@+id/iv_buttonSearch"></EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Search Type:"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tv_fillerPersonID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_buttonSearch"
+        android:layout_toStartOf="@+id/textView3"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/tv_PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_fillerPersonID"
+        android:layout_below="@+id/tv_fillerPersonID"
+        android:layout_marginTop="35dp"
+
+  />
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_fillerPersonID"
+        android:layout_toEndOf="@+id/textView3"
+      />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_PhoneNumber"
+        android:layout_alignEnd="@+id/tv_Name"
+
+       />
+
+
+</RelativeLayout>

@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [Comsoft1]
+    WITH PASSWORD = N'viwlobmFtal|coalmAlpbdJlmsFT7_&#$!~<Uan{vjl%tPoz', SID = 0x40A898FB9D267849A722FC6C7EBE2722, DEFAULT_DATABASE = [Comsoft1], DEFAULT_LANGUAGE = [us_english], CHECK_EXPIRATION = ON;
+

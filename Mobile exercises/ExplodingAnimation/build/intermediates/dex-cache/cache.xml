@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_e716d5c40ced3a166c3a47012343e0df0614f8f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_882bd72653a45961969b9e868c51b816e68bc473\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7ad06ee54a91a3245ade00fbe3d993b4b3de220c">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_73cfbe5b4ffab8f47148a51ed7a5b178a4c22b4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_1c8146f8d3f8c1ed1463111c8c834e7656990e61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_bd57343feba1e954f4f0b79009bab236ffa1d914\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_ea6861aa5417de3b9b9a46f41e9aff7d34fd3ff1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_e5fb4e615325df28fee48caa201d665910834e30\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_7fb56653f6ad4538ebfbef0ae3cc5c8e8769d4da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\libs\easyandroidanimationslibrary-v0.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="81d390299222db75e62708400b299080d122b28b">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\2\easyandroidanimationslibrary-v0.5_4863e75f383e862eb98e767f978b3960ef6ec73e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_c13365ff5d0f9761a356b92825207d658570d07b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_a09f075002dfc33564c4634307f81e9888f30627\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_7e788be9e9c966a198d11b11c33f44ac6ff73443\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\ExplodingAnimation\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b75323693db104dfe8afde793f0c89a3380371e1">
+        <dex dex="C:\ExplodingAnimation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_efceb56b542197d1e84eb35ca266f81b51510548\classes.dex" />
+    </item>
+
+</items>

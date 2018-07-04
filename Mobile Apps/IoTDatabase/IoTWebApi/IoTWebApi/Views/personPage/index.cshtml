@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+        table{
+            width:80%;
+        }
+        table, tr, td,th{
+            border:2px black solid;
+            padding:2%;
+        }
+        tr:nth-child(odd){
+            background-color:lightgrey;
+        }
+        tr:nth-child(even){
+            background-color:white;
+        }
+        th{
+            background-color:#595959;
+            color:white;
+        }
+        input[type=submit]{
+            margin-left:75%;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>People</h2>
+    <h4>All the people in the database</h4>
+    <br />
+    <br />
+    <form method="post" action="/IoTDatabase/personPage/del">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Delete</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.name </td>
+                    <td>@item.phoneNumber</td>
+                    <td>@item.email</td>
+                    <td><input type="checkbox" id="delete" value="@item.personID" name="id"/></td>
+                </tr>
+            }
+
+        </table> <br /><br />
+        <input type="submit" value="Delete" id="delete" />
+
+    </form>
+</body>
+</html>
+

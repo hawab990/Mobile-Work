@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>viewItems</title>
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 2px black solid;
+            padding: 2%;
+        }
+        
+        table{
+            width:100%;
+        }
+
+        tr:nth-child(odd){
+            background-color:lightgrey;
+        }
+        tr:nth-child(even){
+            background-color:white;
+        }
+        th{
+            background-color:#595959;
+            color:white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>All the items</h1>
+    <div> 
+            <table>
+                <tr>
+                    <th>Type name</th>
+                    <th>subType name</th>
+                    <th>subtype description</th>
+                    <th>item notes</th>
+                    <th></th>
+                </tr>
+
+                @foreach (Item thing in ViewBag.itemList)
+            {
+                    <tr>
+                        <td>@thing.SubType.Type.typeName</td>
+                        <td>@thing.SubType.subTypeName</td>
+                        <td>@thing.SubType.description</td>
+                        <td>@thing.itemNote</td>
+                        <td><form method="post" action="itemPage/delItem"><input type="hidden" value=@thing.itemID name="itemID" /><input id="submit" type="submit" name="submit" value="delete"></form></td>
+                </tr>
+                }
+
+            </table>
+
+        
+    </div>
+</body>
+</html>

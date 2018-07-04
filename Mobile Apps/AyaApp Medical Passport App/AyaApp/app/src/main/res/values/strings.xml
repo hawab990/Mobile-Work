@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AyaApp</string>
+
+    <string name="linkToSmokeFree"><a href="http://www.smokefree.org.nz">Smoke free</a></string>
+    <string name="workers_auckland"><a href="https://ayacancernetwork.org.nz/auckland-and-northland-region">Auckland/Northland</a></string>
+    <string name="workers_midland"><a href="https://ayacancernetwork.org.nz/midland-region">Midland</a></string>
+    <string name="workers_midcentral"><a href="https://ayacancernetwork.org.nz/midcentral-region">Mid Central</a></string>
+    <string name="workers_capital"><a href="https://ayacancernetwork.org.nz/capital-and-coast-region">Capital and Coast</a></string>
+    <string name="workers_canterbury"><a href="https://ayacancernetwork.org.nz/canterbury-region">Canterbury</a></string>
+    <string name="workers_southern"><a href="https://ayacancernetwork.org.nz/southern-region">Southern</a></string>
+
+
+    <string name="linktocanteen"><a href="http://www.canteen.org.au">www.canteen.org.au/</a></string>
+    <string name="teenslivingwithcancer"><a href="http://www.teenslivingwithcancer.com">www.teenslivingwithcancer.com</a></string>
+    <string name="cancernz"><a href="http://www.cancernz.co.nz/blood-cancer">www.cancernz.co.nz/blood-cancer</a></string>
+    <string name="health"><a href="http://www.health.govt.nz">www.health.govt.nz</a></string>
+    <string name="southerndhb"><a href="http://www.southerndhb.govt.nz">www.southerndhb.govt.nz</a></string>
+    <string name="aftercure"><a href="http://www.aftercure.org">www.aftercure.org</a></string>
+    <string name="seventyk"><a href="http://http://seventyk.com/">http://seventyk.com/</a></string>
+    <string name="SmokeFree"><a href="http://www.smokefree.org.nz">www.smokefree.org.nz</a></string>
+    <string name="fertileHope"><a href="http://www.fertilehope.org">http://www.fertilehope.org</a></string>
+    <string name="cancersurvivor"><a href="http://www.cancersurvivor.com">www.cancersurvivor.com</a></string>
+    <string name="stupidcancer"><a href="http://http://stupidcancer.org/">http://stupidcancer.org/</a></string>
+    <string name="southernpho"><a href="http://www.southernpho.health.nz/wellbeingsexual.php">www.southernpho.health.nz/wellbeingsexual.php</a></string>
+    <string name="whatnext"><a href="http://www.whatnext.com/blog/posts/13-things-cancer-cannot-do">www.whatnext.com/blog/posts/13-things-cancer-cannot-do</a></string>
+
+
+
+</resources>

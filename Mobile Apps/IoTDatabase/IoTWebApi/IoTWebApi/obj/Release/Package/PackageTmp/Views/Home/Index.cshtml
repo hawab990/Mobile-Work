@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+        a{
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h2>@ViewBag.result</h2>
+        <h3>View</h3>
+        <!--ADD /IoTDatabase WHEN PUBLISHING ::::: REMOVE WHEN DEBUGING!!!!!-->
+        <a href="/IoTDatabase/personPage">View people</a>
+        <br />
+        <a href="/IoTDatabase/itempage">View all items</a>
+        <br />
+        <a href="/IoTDatabase/itemDeployed">View items Deployed</a>
+        <br />
+        <a href="/IoTDatabase/itemIssuedPage/index">View items Issued</a>
+        <br />
+        <a href="/IoTDatabase/project">View projects</a>
+        <br />
+        <br />
+        <a href="/IoTDatabase/whoHasWhat">Who has what item</a>
+        <br />
+        <br />
+        <h3>Add</h3>
+        <a href="/IoTDatabase/personPage/personAdd">Add person</a>
+        <br />
+        <a href="/IoTDatabase/itemPage/addItem">Add Item</a>
+        <br />
+        <a href="/IoTDatabase/itemDeployed/addItem">Deploy an item</a>
+        <br />
+        <a href="/IoTDatabase/itemIssuedPage/checkOutItem">Issue an item</a>
+        <br />
+        <a href="/IoTDatabase/project/addItem">Add a project</a>
+        <br />
+    </div>
+</body>
+</html>

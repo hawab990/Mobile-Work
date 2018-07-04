@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="bit.hawwag2.musicschoolapp.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enroll for Music Lessons!"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/activity_padding_title"
+        android:paddingTop="@dimen/activity_padding_chooseInstrument"
+        android:textSize="24sp"
+        android:id="@+id/TextView" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#d13033"/>
+
+    <TextView
+        android:text="Choose your instrument"
+        android:paddingTop="@dimen/activity_padding_chooseInstrument"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_padding_chooseInstrument"
+        android:layout_marginTop="@dimen/activity_padding_top"
+        android:id="@+id/rdoGroup"
+        android:layout_below="@+id/TextView"
+        android:layout_centerHorizontal="true">
+        <RadioButton android:id="@+id/radio_Accordian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Accordian"
+            />
+        <RadioButton android:id="@+id/radio_Bassoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Bassoon"
+            />
+        <RadioButton android:id="@+id/radio_Cello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cello"
+            />
+        >
+
+        </RadioGroup>
+
+    <TextView
+        android:text="When do you want to start?"
+        android:paddingTop="@dimen/activity_padding_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewWhen" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_padding_top"
+        android:layout_above="@+id/btnDisplay"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/activity_padding_title"
+        android:id="@+id/monthSpinner" />
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#d13033"/>
+
+    <Button
+        android:text="Enroll Me!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewResult"
+        android:layout_alignEnd="@+id/rdoGroup"
+        android:id="@+id/btnDisplay" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_padding_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/textViewResult"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/activity_fontsizes_subtitles"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/activity_padding_top"
+        android:layout_marginBottom="@dimen/activity_padding_top" />
+
+</LinearLayout>

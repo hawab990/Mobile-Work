@@ -1,0 +1,25 @@
+How to for the layouts
+
+Few notes:
+	- to use in the activity's layout (sits directly underneath the parent layout (e.g. RelativeLayout) in both the XML and Component Tree)
+		<include layout="@layout/[layoutname]">
+	- with all the layouts you will need to add the header text in the top blue bar within the activity's layout file. the style for this is @styles\headerText. 
+	  if you have the text view mostly centered on the blue bar, it should sit in the centre.
+	- don't forget to wire up the buttons in the layouts in the activities
+	- make sure in the top layout tag of the activity's XML that there isn't any padding otherwise there will be some screwy looking stuff happening
+
+Layout names and what they do and what they're for:
+	- generic_layout - used as an <include> on the other layouts
+	- generic_layout_without_menu - used in the menu activity layout
+	- generic_with_back_button - used on any screens that have information that need the options of back, home and menu (e.g. AYA Key Workers, Helpful Tips, etc)
+	- layout_for_edit_screens - used for any activities that are edit activities (e.g. EditDiagnosisInformation, EditHealthInformation, etc)
+	- home_layout - the layout for the home screen
+	- layout_with_arrow_and_edit - used for screens that display information than can be edited (e.g. ViewDiagnosisInformation, ViewHealthInformation, etc)
+
+
+IDs of buttons that will need wired up:
+	- btn_home
+	- btn_Back
+	- btn_Edit
+	- btn_menu
+	- btn_aya_contacts

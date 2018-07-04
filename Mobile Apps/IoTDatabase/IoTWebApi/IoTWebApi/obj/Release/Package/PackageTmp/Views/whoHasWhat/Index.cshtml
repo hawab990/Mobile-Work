@@ -1,0 +1,80 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 2px black solid;
+            padding: 2%;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tr:nth-child(even) {
+            background-color: white;
+        }
+
+        th {
+            background-color: #595959;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Who has what items</h1>
+    <div> 
+        <form id="form" method="post" action="/IoTDatabase/whoHasWhat/selected">
+            <label for="personSelect">people</label>
+            <select id="personSelect" name="personID" onchange="personSelected();">
+                @foreach (Person person in ViewBag.persons)
+                {
+                    <option value=@person.personID name="personID" @if(person.personID == ViewBag.selectedID) { @:selected
+                            } >@person.name</option>
+                }
+            </select>
+        </form>
+
+@if (ViewBag.itemIssueList != null)
+{
+        <table>
+            <tr>
+                <th>date taken</th>
+                <th>date returned</th>
+                <th>subType name</th>
+                <th>type name</th>
+                <th>item note</th>
+            </tr>
+                @foreach (ItemIssue item in ViewBag.itemIssueList)
+                {
+                <tr> 
+                    <td>@item.dateTaken</td>
+                    <td>@item.dateReturned</td>
+                    <td>@item.Item.SubType.subTypeName</td>
+                    <td>@item.Item.SubType.Type.typeName</td>
+                    <td>@item.Item.itemNote</td>
+                </tr>
+                }
+            
+        </table>
+}
+</div>
+
+    <script>
+        function personSelected() { document.getElementById("form").submit(); }
+    </script>
+</body>
+</html>

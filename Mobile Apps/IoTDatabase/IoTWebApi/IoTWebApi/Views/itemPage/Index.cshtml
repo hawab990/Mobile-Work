@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+        table {
+            width: 80%;
+        }
+
+        table, tr, td, th {
+            border: 2px black solid;
+            padding: 2%;
+        }
+
+            tr:nth-child(odd) {
+                background-color: lightgrey;
+            }
+
+            tr:nth-child(even) {
+                background-color: white;
+            }
+
+        th {
+            background-color: #595959;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Items</h2>
+    <h4>All the items in the database</h4>
+    <br />
+    <br />
+    <div> 
+            <table>
+                <tr>
+                    <th>Category/Manufacturer</th>
+                    <th>Subtype/Model</th>
+                    <th>Subtype/Model Description</th>
+                    <th>Notes</th>
+                    <th>Delete</th>
+                </tr>
+
+                @foreach (Item thing in ViewBag.itemList)
+            {
+                    <tr>
+                        <td>@thing.SubType.Type.typeName</td>
+                        <td>@thing.SubType.subTypeName</td>
+                        <td>@thing.SubType.description</td>
+                        <td>@thing.itemNote</td>
+                        <td><form method="post" action="itemPage/delItem"><input type="hidden" value=@thing.itemID name="itemID" /><input id="submit" type="submit" name="submit" value="delete"></form></td>
+                </tr>
+                }
+
+            </table>
+
+        
+    </div>
+</body>
+</html>

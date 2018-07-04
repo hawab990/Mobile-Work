@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_health_information"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="op_bit.ayaapp.EditHealthInformation">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                app:srcCompat="@color/ayaBlue"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView"
+                android:layout_height="@dimen/title_bar"
+                ></ImageView>
+            <Button
+                android:layout_width="@dimen/title_bar"
+                android:layout_height="@dimen/title_bar"
+                android:id="@+id/btn_Back"
+                android:background="@drawable/arrow_aya"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Health Information"
+                style="@style/headerText"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="FirstName"
+                android:id="@+id/etFirstName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="37dp"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:ems="20"
+                android:background="@drawable/rectanglewithborder"
+
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="GPName"
+                android:id="@+id/etGPName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                android:background="@drawable/rectanglewithborder"
+                android:layout_weight="1"
+                android:ems="20"
+
+
+
+
+                />
+
+        </LinearLayout>
+
+
+    <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+                android:hint="LastName"
+                android:id="@+id/etLastName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="37dp"
+                android:layout_weight="2"
+                android:ems="20"
+            android:background="@drawable/rectanglewithborder"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="GPAddress"
+                android:id="@+id/etGPAddress"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                android:layout_weight="1"
+                android:ems="20"
+                android:background="@drawable/rectanglewithborder"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Gender"
+                android:id="@+id/etGender"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/PaddLeftside"
+                android:layout_weight="2"
+                android:ems="20"
+                android:background="@drawable/rectanglewithborder"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="GP Number"
+                android:id="@+id/etGPNumber"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="177dp"
+                android:layout_weight="1"
+                android:ems="20"
+                android:background="@drawable/rectanglewithborder"
+
+                />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="NHI Number"
+            android:id="@+id/etNHINumber"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/PaddLeftside"
+            android:background="@drawable/rectanglewithborder"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Date Of Birth"
+                android:id="@+id/tv_DOB"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/PaddLeftside"
+                android:background="@drawable/rectanglewithborder"
+                />
+
+
+            <Button
+                android:text="Select Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mybutton"
+                android:id="@+id/btn_SelectDate" />
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:hint="BSA At Diagnosis"
+            android:id="@+id/etBSAAtDiagnosis"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/PaddLeftside"
+            android:background="@drawable/rectanglewithborder"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etExistingAllergies"
+            android:text="ExistingAllergies"
+            android:layout_marginStart="@dimen/PaddLeftside"
+            android:background="@drawable/rectanglewithborder"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/etOther"
+            android:text="Other"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="@dimen/PaddLeftside"
+            android:background="@drawable/rectanglewithborder"/>
+
+        <TextView
+            android:hint="Medical Oncology Team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center|bottom"
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+
+            />
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Contacts"
+                android:id="@+id/etContacts"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/PaddLeftside"
+                android:textSize="@dimen/Subcategories"
+                android:background="@drawable/rectanglewithborder"
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Oncologist"
+                android:id="@+id/etOncologist"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                android:textSize="@dimen/Subcategories"
+                android:background="@drawable/rectanglewithborder"
+
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="Phone"
+                android:id="@+id/etPhone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="37dp"
+                android:textSize="@dimen/Subcategories"
+                android:background="@drawable/rectanglewithborder"
+
+
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="AYA Key Worker"
+                android:id="@+id/etAYaKeyWorker"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                android:textSize="@dimen/Subcategories"
+                android:background="@drawable/rectanglewithborder"
+
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout">
+
+
+            <Button
+                android:text="Home"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="left"
+                android:id="@+id/btn_home"
+                android:background="@color/ayaBlue"
+                android:paddingTop="10dp"
+
+                android:textSize="@dimen/labels"
+
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="Menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:id="@+id/btn_menu"
+                android:textSize="@dimen/labels"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:background="@color/ayaBlue"
+                android:textColor="@android:color/white"
+                android:layout_above="@+id/linearLayout"
+                android:layout_alignStart="@+id/btn_Done"
+                android:layout_marginStart="117dp" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="90dp"
+            android:id="@+id/btn_Done"
+            android:background="@drawable/done"
+            android:text="Done"
+            android:gravity="center_vertical|center|bottom"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

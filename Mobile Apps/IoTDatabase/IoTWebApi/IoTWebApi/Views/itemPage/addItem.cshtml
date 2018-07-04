@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+
+        <style type="text/css">
+            label,span{
+                display: inline-block;
+                float: left;
+                clear: left;
+                width: 200px;
+                text-align: right;
+            }
+
+            input[type=text], select{
+              display: inline-block;
+              float: left;
+              margin-left:2%;
+              margin-bottom:1%;
+            }
+
+            input[type=submit]{
+                float:left;
+                clear:left;
+                margin-left:330px;
+                display: inline-block;
+
+            } 
+
+        </style>
+    
+    </head>
+    <body>
+        <h2>Item</h2>
+        <h4>Add an item</h4>
+        <br />
+    <div class="bod">
+        <form method="post" action="newItem">
+          <span>Model/Subtype</span>
+            <select id="subTypeSelect" name="subTypeList" onchange="checkSubTypeInput();">
+                <option value="" name="subType">input new</option>
+                @foreach (IoTWebApi.SubType item in ViewBag.currentSubtypes)
+                {
+                    <option value=@item.subTypeName name="subType">@item.subTypeName</option>
+                }
+            </select>
+            <br />
+            <div id="subTypeHide">
+                <span>Category/Manufacturer:</span>
+                <select id="typeSelect" name="typeList" onchange="checkTypeInput();">
+                    <option value="" name="type">input new</option>
+                    @foreach (IoTWebApi.Type item in ViewBag.currentTypes)
+                    {
+                        <option value=@item.typeName name="type">@item.typeName</option>
+                    }
+                </select>
+                <br /><br />
+                <label for="subType name">Model/Subtype</label>
+                <input id="subType" type="text" name="subType">
+                <br />
+                <label for="subTypeDescription">Model/Subtype Description</label>
+                <input id="subTypeDescription" type="text" name="subTypeDescription">
+                <br />
+
+                <div id="typeHide">
+                    <label for="type name">Category/Manufacturer Name</label>
+                    <input id="type" type="text" name="type">
+                </div>
+            </div>
+            <br />
+            <label for="itemNotes">Notes</label>
+            <input id="itemNotes" type="text" name="itemNote">
+
+            <br />
+            <input id="submit" type="submit" name="submit">
+        </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <script>
+            function checkSubTypeInput() {
+                if (document.getElementById("subTypeSelect").value == "") {
+
+                    document.getElementById("subTypeHide").style.display = "block";
+
+                }
+                else {
+                    document.getElementById("subTypeHide").style.display = "none";
+                    checkSubTypeInput();
+                    document.getElementById("typeHide").style.display = "none";
+
+
+                }
+            }
+                function checkTypeInput()
+                {
+                    if(document.getElementById("typeSelect").value == ""){
+                        document.getElementById("typeHide").style.display="block";
+                    }
+                    else
+                    {
+                        document.getElementById("typeHide").style.display="none";
+                    }
+                }
+ 
+        </script>
+    </div>
+</body>
+</html>

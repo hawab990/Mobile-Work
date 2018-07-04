@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MusicSchoolApp</string>
+    <string name="Accordian">Accordian</string>
+    <string name="Bassoon">Bassoon</string>
+    <string name="Cello">Cello</string>
+    <string-array name="Months_Array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+</resources>

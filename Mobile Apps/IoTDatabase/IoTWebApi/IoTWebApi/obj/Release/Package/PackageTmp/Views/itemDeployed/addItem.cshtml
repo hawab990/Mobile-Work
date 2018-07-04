@@ -1,0 +1,104 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>addItem</title>
+
+    <style type="text/css">
+        label, span {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 180px;
+            text-align: right;
+        }
+
+        input[type=text], select {
+            display: inline-block;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 1%;
+        }
+
+        input[type=submit] {
+            float: left;
+            clear: left;
+            margin-left: 250px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+    <div> 
+        @if (ViewBag.projects.Count == 0 || ViewBag.items.Count == 0)
+        {
+            <h2>There must be a item in the database to deploy an item</h2>
+        }
+        else
+        {
+
+
+
+
+        <form method="post" action="newItem">
+            <br />
+            <label for="projectSelect">projects</label>
+            <select id="projectSelect" name="subTypeList" onchange="checkSubTypeInput();">
+                <option value="" name="projectList">input new</option>
+                @foreach (Project item in ViewBag.projects)
+                {
+                    <option value=@item.projectName name="projectList">@item.projectName</option>
+                }
+            </select>
+            
+
+            <div id="projectHide">
+                <br />
+                <label for="projectName">project name</label>
+                <input id="projectName" type="text" name="projectName">
+            </div>
+            <br /><br />
+                <label for="ItemSelect">item</label>
+                <select id="ItemSelect" name="itemListID" onchange="checkSubTypeInput();">
+
+                    @foreach (Item item in ViewBag.items)
+                    {
+                        <option value="@item.itemID" name="itemListID">@item.SubType.subTypeName &nbsp;&nbsp; @item.SubType.Type.typeName &nbsp;&nbsp; @item.itemNote</option>     //CHANGE
+                    }
+
+                </select>
+            <br />
+            <br />
+            <label for="location">location</label>
+            <input id="location" type="text" name="location">
+            <br />
+            <label for="notes">notes</label>
+            <input id="notes" type="text" name="notes">
+            <br />
+            <input id="submit" type="submit" name="submit">
+        </form>
+        }
+        <br />
+        <br />
+        <br />
+</div>
+
+    <script>
+        function checkSubTypeInput() {
+            if (document.getElementById("projectSelect").value == "") {
+
+                document.getElementById("projectHide").style.display = "block";
+
+            }
+            else {
+                document.getElementById("projectHide").style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

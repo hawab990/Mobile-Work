@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_diagnosis_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="op_bit.ayaapp.EditDiagnosisInformation">
+
+    <include layout="@layout/layout_for_edit_screens"/>
+
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/edt_ediDateDiagnosed"
+        android:layout_below="@+id/edt_ediDiagnosis"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/rectanglewithborder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ediTreatment"
+        android:text="treatment:"
+        android:layout_alignTop="@+id/edt_ediTreatment"
+        android:layout_alignEnd="@+id/tv_ediDateDiagnosed" />
+
+    <TextView
+        android:text="Remmision:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ediRemmision"
+        android:layout_alignTop="@+id/edt_ediRemision"
+        android:gravity="top"
+        android:layout_alignEnd="@+id/tv_ediTreatment" />
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edt_ediRemision"
+        android:background="@drawable/rectanglewithborder"
+        android:layout_below="@+id/edt_ediTreatment"
+        android:layout_alignStart="@+id/edt_ediTreatment"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:gravity="top"
+        android:ems="10"
+        android:layout_marginTop="24dp"
+        android:id="@+id/edt_ediTreatment"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rectanglewithborder"
+        android:layout_below="@+id/tv_ediDateDiagnosed"
+        android:layout_alignStart="@+id/edt_ediDateDiagnosed" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/edt_ediDiagnosis"
+        android:layout_marginTop="6dp"
+        android:layout_alignEnd="@+id/edt_ediDiagnosis"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/edt_ediDateDiagnosed"
+        android:layout_marginTop="6dp"
+        android:layout_alignEnd="@+id/edt_ediDateDiagnosed"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/edt_ediTreatment"
+        android:layout_marginTop="9dp"
+        android:layout_alignEnd="@+id/edt_ediTreatment"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Date Diagnosed:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ediDateDiagnosed"
+        android:layout_alignTop="@+id/edt_ediDateDiagnosed"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Diagnosis Information"
+        style="@style/headerText"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="Diagnosis:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ediDiagnosis"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/tv_ediRemmision"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edt_ediDiagnosis"
+        android:gravity="top"
+        android:background="@drawable/rectanglewithborder"
+        android:layout_alignBaseline="@+id/tv_ediDiagnosis"
+        android:layout_alignBottom="@+id/tv_ediDiagnosis"
+        android:layout_alignStart="@+id/edt_ediDateDiagnosed" />
+
+</RelativeLayout>

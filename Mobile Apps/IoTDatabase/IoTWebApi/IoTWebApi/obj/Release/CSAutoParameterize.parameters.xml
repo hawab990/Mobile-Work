@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Comsoft1ConnectionString-Web.config Connection String" description="Comsoft1ConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=bitdev.ict.op.ac.nz;Initial Catalog=Comsoft1;Persist Security Info=True;User ID=comsoft1;Password=P@ssw0rd" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\CommSoftTasks\\IoTDatabase\\IoTWebApi\\IoTWebApi\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Comsoft1ConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

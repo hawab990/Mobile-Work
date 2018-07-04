@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9E9D24"
+    android:visibility="visible"
+    tools:context="com.bit.iotdatabaseapp.ViewDatabase">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbarviewdatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <Spinner
+        android:id="@+id/spn_itemView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="11dp"
+        android:popupBackground="#A5D6A7"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/include"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose View Type:"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/spn_itemView"
+        android:layout_alignStart="@+id/Fragholder" />
+
+
+    <LinearLayout
+        android:id="@+id/Fragholder"
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

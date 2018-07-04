@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bit.hawwag2.laungagepreference.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Language Chosen Yet"
+        android:id="@+id/tvChosenLanguage"
+        android:textSize="@dimen/TextViewtitleFont"/>
+
+    <Button
+        android:text="Set Language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetLang"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Change Your Language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:id="@+id/textView2"
+        android:textSize="@dimen/TextView_SubTitle_fontSize"
+        android:layout_below="@+id/tvChosenLanguage"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:id="@+id/rdoGroupLanguage"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/tvChangeColor"
+        android:layout_marginStart="53dp">
+        <RadioButton android:id="@+id/rdoButtonFrench"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="French" />
+        <RadioButton android:id="@+id/rdoButtonGerman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="German"
+           />
+        <RadioButton android:id="@+id/rdoButtonSpanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spanish"
+           />
+    </RadioGroup>
+
+    <TextView
+        android:text="ChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/tvChangeColor"
+        android:textSize="@dimen/TextView_SubTitle_fontSize"
+        android:layout_below="@+id/rdoGroupLanguage"
+        android:layout_alignStart="@+id/textView2" />
+
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rdoChangeColor"
+        android:layout_above="@+id/btnSetLang"
+        android:layout_alignStart="@+id/rdoGroupLanguage">
+        <RadioButton android:id="@+id/rdoButtonRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+        <RadioButton android:id="@+id/rdoButtonBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            />
+        <RadioButton android:id="@+id/rdoButtonGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            />
+    </RadioGroup>
+
+
+</RelativeLayout>

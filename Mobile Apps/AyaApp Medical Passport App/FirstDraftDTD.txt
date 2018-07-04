@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE medical [
+<!ELEMENT medical (healthInfo,diagnosisInfo,medications,appointments)>
+<!ELEMENT healthInfo (firstName,lastName,gender,NHI,DOB,BSA,GPDetails,exestingAllergies,other,OnocologyTeam)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT NHI (#PCDATA)>
+<!ELEMENT DOB (#PCDATA)>
+<!ELEMENT BSA (#PCDATA)>
+<!ELEMENT GPDetails (Name,Address,Number)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Number (#PCDATA)>
+<!ELEMENT exestingAllergies (#PCDATA)>
+<!ELEMENT other (#PCDATA)>
+
+<!ELEMENT OnocologyTeam (phone,Oncologist,AYAKeyWorker,contactsName)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT Oncologist (#PCDATA)>
+<!ELEMENT AYAKeyWorker (#PCDATA)>
+<!ELEMENT contactsName (#PCDATA)>
+
+<!ELEMENT diagnosisInfo (diagnosis,dateDiagnosed,treatment,remision)>
+<!ELEMENT diagnosis (#PCDATA)>
+<!ELEMENT dateDiagnosed (#PCDATA)>
+<!ELEMENT treatment (#PCDATA)>
+<!ELEMENT remision (#PCDATA)>
+<!ELEMENT medications (medicationName,cumulativeDosage,dosage)>
+<!ELEMENT medicationName (#PCDATA)>
+<!ELEMENT cumulativeDosage (#PCDATA)>
+<!ELEMENT dosage (#PCDATA)>
+
+<!ELEMENT appointments (type,date)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+]>
+
+

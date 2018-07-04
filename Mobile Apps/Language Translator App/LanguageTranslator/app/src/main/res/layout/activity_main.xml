@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_blue_light"
+    tools:context="bit.hawwag2.languagetranslator.MainActivity">
+
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/keyboardicon"
+        android:id="@+id/ivChooseKeyboard"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <com.skyfishjy.library.RippleBackground
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="#0099CC"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="1"
+        app:rb_duration="3000"
+        app:rb_scale="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="From:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvChooseSource"
+            android:textSize="@dimen/Text_view_Font_Size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:id="@+id/tvResult"
+            android:textSize="@dimen/Text_view_Font_Size"
+            android:background="@drawable/roundtextview"
+            android:textColor="#003399"
+            android:gravity="center"
+
+            tools:text="Destination language"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/texttospeech"
+            android:id="@+id/ivTextToSpeech"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignTop="@+id/ivDefineWord"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:srcCompat="@drawable/wordinfo"
+            android:id="@+id/ivDefineWord"
+            android:layout_marginTop="39dp"
+            android:layout_alignTop="@+id/tvResult"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="18dp" />
+
+        <TextView
+            android:text="To:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="@dimen/Text_view_Font_Size"
+            android:layout_below="@+id/spnnerSourceLanguage"
+            android:layout_alignStart="@+id/tvChooseSource" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etInputLanguage"
+            android:textColor="#003399"
+            android:textColorHint="#003399"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"
+            android:hint="              Type here:"
+            android:background="@drawable/roundedittextview"
+            android:layout_alignTop="@+id/ivClickTranslate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/ivClickTranslate"
+            android:background="@android:color/transparent"
+            android:src="@drawable/texttotext"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/spnnerDestinationLanguage"
+            android:layout_alignEnd="@+id/tvResult" />
+
+        <Spinner
+            android:layout_width="@dimen/Spinner_Width"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnnerSourceLanguage"
+            android:layout_below="@+id/tvChooseSource"
+            android:layout_alignStart="@+id/tvResult" />
+
+        <Spinner
+            android:layout_width="@dimen/Spinner_Width"
+            android:layout_height="wrap_content"
+            android:id="@+id/spnnerDestinationLanguage"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/spnnerSourceLanguage" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>

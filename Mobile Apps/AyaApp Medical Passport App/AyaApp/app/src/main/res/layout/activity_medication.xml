@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medication"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="op_bit.ayaapp.Medication">
+
+    <include layout="@layout/generic_with_back_button"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Medication"
+                style="@style/headerText"
+                android:id="@+id/textView10"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView"
+                android:layout_below="@+id/textView10"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@color/ayaBlue"
+                android:layout_below="@+id/listView"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="13dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button"
+                android:layout_alignBottom="@+id/button"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/button"
+                android:text="Add Medication"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

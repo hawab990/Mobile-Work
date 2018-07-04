@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <style type="text/css">
+        label {
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 160px;
+            text-align: right;
+        }
+
+        select {
+            display: inline-block;
+            float: left;
+            margin-left: 2%;
+            margin-bottom: 1%;
+        }
+
+        input[type=submit] {
+            float: left;
+            clear: left;
+            margin-left: 250px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h4>Issue an item to a person</h4>
+
+    <br />
+    <br />
+    <form method="post" id="checkout-form" action="checkOutItem">
+<<<<<<< HEAD
+        <label for="person">Person checking out: </label>
+=======
+
+        @if (ViewBag.person.Count == 0 || ViewBag.item.Count == 0)
+        {<h2>To check out an item you must have an item and a person in the database</h2>}
+        else
+        {
+
+
+
+        <label for="person">Person checking out:</label>
+
+>>>>>>> 3c4c82529c6ad68221eba19be9b31190f2f17188
+        <select value="person" name="personString">
+
+            @foreach (Person item in ViewBag.person)
+            {
+                <option value="@item.personID" name="@item.name">@item.name</option>
+            }
+        </select>
+        <br />
+
+        <label for="item">Item: </label>
+        <select value="item" name="itemString">
+            @foreach (IoTWebApi.Item i in ViewBag.item)
+            {
+                <option value="@i.itemID" name="@i.itemID">@i.SubType.subTypeName @i.SubType.Type.typeName: @i.itemNote</option>
+            }
+        </select>
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 3c4c82529c6ad68221eba19be9b31190f2f17188
+        <br />
+        <input type="submit" id="submit" name="Submit" />
+        }
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+</body>
+</html>
